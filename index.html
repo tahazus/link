@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hello👋, I'm Taha a Gamer and Network Engineer." />
-    <title>TahazuS</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hello👋, I'm Taha, a Gamer and Network Engineer." />
+  <title>TahazuS</title>
+  <link rel="icon" href="Images/code.png" type="image/x-icon" />
 
-    <link rel="icon" href="Images/code.png" type="image/x-icon"/>
-    <link rel="stylesheet" href="Style/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    
+  <style>
+    @font-face {
+      font-family: 'Monument';
+      src: url('/fonts/MonumentExtended-Regular.ttf');
+    }
+    @font-face {
+      font-family: 'Trueno';
+      src: url('/fonts/TruenoExBdIt.ttf');
+    }
+    body {
+      font-family: 'Monument', sans-serif;
+    }
+    #particles-js {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      z-index: 0;
+      pointer-events: auto;
+      background: #08090C;
+    }
+  </style>
 </head>
-<body>
+<body class="relative bg-black text-white">
 
-<div id="particles-js"></div>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
 
-    <div class="text">
+  <!-- Foreground Content -->
+  <div class="relative z-10 flex flex-col min-h-screen pointer-events-none">
 
-        <!-- Header -->
+    <!-- Header -->
+    <header class="text-center py-8 m-auto w-xl">
+      <h1 class="text-4xl md:text-6xl font-bold pointer-events-auto">TahazuS™</h1>
+    </header>
 
-        <h1>TahazuS™</h1>
+    <!-- Main Links -->
+    <main class="flex justify-center items-center flex-1">
+      <div class="w-[20%] min-w-[280px] space-y-4 pointer-events-auto">
+        <a href="https://t.me/TahazuS" target="_blank" class="block py-3 rounded-full border border-white text-center text-lg hover:bg-white hover:text-black transition">Telegram</a>
+        <a href="https://t.me/TAWSvoucher" target="_blank" class="block py-3 rounded-full border border-white text-center text-lg hover:bg-white hover:text-black transition">TL Voucher</a>
+        <a href="https://t.me/TAWSgroup" target="_blank" class="block py-3 rounded-full border border-white text-center text-lg hover:bg-white hover:text-black transition">TL Group</a>
+        <a href="https://steamcommunity.com/id/TahazuS/" target="_blank" class="block py-3 rounded-full border border-white text-center text-lg hover:bg-white hover:text-black transition">Steam</a>
+        <a href="https://twitter.com/TahaHadian" target="_blank" class="block py-3 rounded-full border border-white text-center text-lg hover:bg-white hover:text-black transition">Twitter</a>
+        <a href="https://discord.gg/a7PrkNjXWk" target="_blank" class="block py-3 rounded-full border border-white text-center text-lg hover:bg-white hover:text-black transition">Discord</a>
+      </div>
+    </main>
 
-        <!-- Body -->
+    <!-- Footer -->
+    <footer class="text-center py-6 text-sm text-gray-300 m-auto w-xl">
+      <p class="pointer-events-auto">©2025 taws. All rights reserved.</p>
+    </footer>
 
-        <div id="first-column" class="column">
-            <a href="https://t.me/TahazuS" target="_blank"><p>Telegram</p></a>
-        </div>
-        <div class="column">
-            <a href="https://t.me/TAWSvoucher" target="_blank"><p>TL Voucher</p></a>
-        </div>
-        <div class="column">
-            <a href="https://t.me/TAWSgroup" target="_blank"><p>TL Group</p></a>
-        </div>
-        <div class="column">
-            <a href="https://steamcommunity.com/id/TahazuS/" target="_blank"><p>Steam</p></a>
-        </div>
-        <div class="column">
-            <a href="https://twitter.com/TahaHadian" target="_blank"><p>Twitter</p></a>
-        </div>
-        <div class="column">
-            <a href="https://discord.gg/a7PrkNjXWk" target="_blank"><p>Discord</p></a>
-        </div>
+  </div>
 
-        <!-- Footer -->
-        
-        <div class="footer">
-            <p>
-                ©2025 taws. All rights reserved.
-            </p>
-        </div>
-    </div>
-
-    <!-- scripts -->
-     
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>    
-    <script src="js/app.js"></script>
+  <!-- Particle.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="js/app.js"></script>
 
 </body>
-</html> 
-
-
+</html>
